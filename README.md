@@ -1,4 +1,4 @@
-Pinguim de Colina - Jogo de Plataforma 2D Retrô
+Pinguim da Colina - Jogo de Plataforma 2D Retrô
 Este é um jogo de plataforma 2D desenvolvido em JavaScript puro (Vanilla JS) utilizando a API do Canvas HTML5. O projeto foi construído seguindo a estética e mecânicas clássicas de jogos de 8-bits, combinando elementos inspirados em Super Mario Bros. com uma identidade visual personalizada.
 
 Funcionalidades e Mecânicas Implementadas
