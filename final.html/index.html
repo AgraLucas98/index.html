@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Retro Platformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="arcade-console">
+        <div class="dpad-container">
+            <div class="dpad-btn dpad-up" id="ctrl-up"></div>
+            <div class="dpad-btn dpad-left" id="ctrl-left"></div>
+            <div class="dpad-center"></div>
+            <div class="dpad-btn dpad-right" id="ctrl-right"></div>
+            <div class="dpad-btn dpad-down"></div>
+        </div>
+
+        <div class="screen-frame">
+            <canvas id="gameCanvas" width="320" height="192"></canvas>
+        </div>
+
+        <div class="action-container">
+            <div class="btn-arcade btn-b" id="ctrl-b">B</div>
+            <div class="btn-arcade btn-a" id="ctrl-a">A</div>
+        </div>
+
+        <div class="menu-label">MENU</div>
+    </div>
+
+    <div class="instructions">
+        Controles: Setas Laterais (Andar) | Seta Cima, Espaço ou Botão A (Pular)
+    </div>
+
+    <script src="final.js"></script>
+</body>
+</html>

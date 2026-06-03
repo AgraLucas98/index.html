@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111827;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+.arcade-console {
+    background-color: #44a4e4;
+    width: 720px;
+    height: 460px;
+    border-radius: 24px;
+    border: 8px solid #247cb4;
+    box-shadow: 0 15px 0px #1c5c8c, 0 25px 40px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.screen-frame {
+    background-color: #0c1424;
+    width: 440px;
+    height: 380px;
+    border-radius: 12px;
+    border: 6px solid #1c2c4c;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    background-color: #8cd4fc;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.dpad-container {
+    display: grid;
+    grid-template-columns: 32px 32px 32px;
+    grid-template-rows: 32px 32px 32px;
+    width: 96px;
+    height: 96px;
+    margin-left: 10px;
+}
+
+.dpad-btn {
+    background-color: #2c3444;
+    border: 2px solid #1c2434;
+    box-shadow: 0 4px 0 #0c1424;
+    cursor: pointer;
+}
+
+.dpad-btn:active { 
+    transform: translateY(2px); 
+    box-shadow: 0 2px 0 #0c1424; 
+}
+
+.dpad-up { grid-column: 2; border-radius: 6px 6px 0 0; }
+.dpad-left { grid-column: 1; grid-row: 2; border-radius: 6px 0 0 6px; }
+.dpad-right { grid-column: 3; grid-row: 2; border-radius: 0 6px 6px 0; }
+.dpad-down { grid-column: 2; grid-row: 3; border-radius: 0 0 6px 6px; }
+.dpad-center { grid-column: 2; grid-row: 2; background-color: #2c3444; cursor: default; box-shadow: none;}
+
+.action-container {
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    transform: rotate(-10deg);
+}
+
+.btn-arcade {
+    width: 48px;
+    height: 48px;
+    background-color: #cc2444;
+    border: 3px solid #8c142c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 0 #5c0c1c;
+    cursor: pointer;
+}
+
+.btn-arcade:active { 
+    transform: translateY(3px); 
+    box-shadow: 0 2px 0 #5c0c1c; 
+}
+
+.btn-b { 
+    background-color: #dc6c14; 
+    border-color: #9c440c; 
+    box-shadow: 0 5px 0 #6c2c04; 
+}
+
+.btn-b:active { 
+    box-shadow: 0 2px 0 #6c2c04; 
+}
+
+.menu-label {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1c2c4c;
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    color: #8cb4f4;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.instructions {
+    margin-top: 20px;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
